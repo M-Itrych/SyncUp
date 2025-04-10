@@ -1,0 +1,15 @@
+[Unit]
+Description=Next.js application
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/var/www/syncup
+Environment="NODE_ENV=production"
+Environment="PORT=3000"
+ExecStart=/usr/bin/npm start
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               String             @id @default(uuid())
+  clerkId          String             @unique
+  email            String             @unique
+  profile          Profile?
+  servers          ServerMembership[]
+  messages         Message[]          @relation("SentMessages")
+  receivedMessages Message[]          @relation("ReceivedMessages")
+  createdAt        DateTime           @default(now())
+  ownedServers     Server[]
+}
+
+model Profile {
+  id        String  @id @default(uuid())
+  userName  String
+  userId    String  @unique
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bio       String?
+  avatarUrl String? @db.Text
+}
+
+model Server {
+  id           String             @id @default(uuid())
+  name         String
+  ownerId      String
+  owner        User               @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  serverImage  String             @db.Text
+  serverInvite String             @unique @default(uuid())
+  bio          String?            @db.Text
+  roles        Role[]
+  members      ServerMembership[]
+  channels     Channel[]
+  createdAt    DateTime           @default(now())
+}
+
+model Role {
+  id          String             @id @default(uuid())
+  name        String
+  serverId    String
+  server      Server             @relation(fields: [serverId], references: [id], onDelete: Cascade)
+  permissions String             @default("")
+  position    Int                @default(0) // Lower number = higher position (0 is highest)
+  color       String?            // Optional: for role colors like Discord
+  memberships ServerMembership[] @relation("MembershipRoles")
+
+  @@index([serverId, position])
+}
+
+model ServerMembership {
+  id       String   @id @default(uuid())
+  userId   String
+  serverId String
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  server   Server   @relation(fields: [serverId], references: [id], onDelete: Cascade)
+  roles    Role[]   @relation("MembershipRoles")
+  joinedAt DateTime @default(now())
+}
+
+model Channel {
+  id        String      @id @default(uuid())
+  name      String
+  type      String
+  serverId  String
+  server    Server      @relation(fields: [serverId], references: [id], onDelete: Cascade)
+  messages  Message[]
+  createdAt DateTime    @default(now())
+}
+
+
+model Message {
+  id         String   @id @default(uuid())
+  content    String   @db.Text
+  senderId   String
+  channelId  String?
+  isEdited   Boolean   @default(false)
+  isDeleted  Boolean   @default(false)
+  receiverId String?
+  sender     User     @relation(name: "SentMessages", fields: [senderId], references: [id], onDelete: Cascade)
+  receiver   User?    @relation(name: "ReceivedMessages", fields: [receiverId], references: [id], onDelete: SetNull)
+  channel    Channel? @relation(fields: [channelId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+}

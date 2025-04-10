@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="825.85001" height="506.44001" viewBox="0 0 825.85001 506.44001" role="img">
+    <path d="m438.22,378.66001c-1.76999,10.70999-11.09,18.91-22.29001,18.91s-20.53-8.20001-22.29001-18.91h-57.04001v123.61002h158.66v-123.60999h-57.04001l.00003-.00003Z" fill="#d9d9d9" stroke-width="0"/>
+    <path d="m735.01001,381.89002H96.85c-4.88,0-8.85-3.97-8.85-8.85001V8.85c0-4.88,3.97-8.85,8.85-8.85h638.15995c4.88,0,8.84998,3.97,8.84998,8.85v364.20002c0,4.88-3.96997,8.85001-8.84998,8.85001h0l.00006-.01001Z" fill="#fff" stroke-width="0"/>
+    <rect x="104.14" y="15.68" width="624.49001" height="352.36999" fill="#fff" stroke-width="0"/>
+    <rect x="452.85547" y="162.80304" width="171" height="15.50007" rx="7.75002" ry="7.75002" fill="#7C3AED" stroke-width="0"/>
+    <rect x="486.35547" y="225.80304" width="137.5" height="15.50007" rx="7.75002" ry="7.75002" fill="#7C3AED" stroke-width="0"/>
+    <rect x="585.35547" y="266.80303" width="38.5" height="15.50007" rx="7.75002" ry="7.75002" fill="#7C3AED" stroke-width="0"/>
+    <rect x="252.85547" y="205.80299" width="131.5" height="15.50007" rx="7.75002" ry="7.75002" fill="#cacacb" stroke-width="0"/>
+    <rect x="252.85547" y="245.80298" width="49.5" height="15.50007" rx="7.75003" ry="7.75003" fill="#cacacb" stroke-width="0"/>
+    <rect x="497.35547" y="184.80299" width="126.5" height="15.50007" rx="7.75002" ry="7.75002" fill="#7C3AED" stroke-width="0"/>
+    <line x1="243.85547" y1="110.80311" x2="632.85547" y2="110.80311" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="256.35547" y1="97.30311" x2="341.62376" y2="97.30311" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+</svg>
