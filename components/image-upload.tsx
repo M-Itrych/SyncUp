@@ -48,7 +48,7 @@ export const ImageUpload = ({
             <UploadButton
                 endpoint={endpoint}
                 onClientUploadComplete={(res) => {
-                    onChange(res?.[0].url);
+                    onChange(res[0].url);
                 }}
                 onUploadError={(error) => {
                     console.error(error);
