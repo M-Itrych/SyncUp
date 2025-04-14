@@ -146,7 +146,9 @@ Ten projekt jest objęty licencją MIT - szczegóły znajdziesz w pliku LICENSE.
 
 ## 👥 Współtwórcy
 
-- [Twoje Imię](https://github.com/yourusername) - Początkowa praca i utrzymanie
+- Sandra Gniewkowska
+- Krzysztof Janieszewski
+- Michał Itrych
 
 ## 🙏 Podziękowania
 
