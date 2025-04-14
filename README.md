@@ -130,30 +130,8 @@ SyncUp jest zbudowany z wykorzystaniem nowoczesnego stosu technologicznego:
 4. **Przesyłanie wiadomości**: Komunikacja w czasie rzeczywistym z Pusher
 5. **Zarządzanie rolami**: Tworzenie i przydzielanie ról uprawnień
 
-## 📝 Współpraca
-
-Zachęcamy do współpracy przy projekcie SyncUp! Zapraszamy do zgłaszania problemów lub pull requestów.
-
-1. Wykonaj fork repozytorium
-2. Utwórz swoją gałąź funkcji (`git checkout -b feature/amazing-feature`)
-3. Zatwierdź swoje zmiany (`git commit -m 'Add some amazing feature'`)
-4. Wypchnij do gałęzi (`git push origin feature/amazing-feature`)
-5. Otwórz Pull Request
-
-## 📄 Licencja
-
-Ten projekt jest objęty licencją MIT - szczegóły znajdziesz w pliku LICENSE.
-
 ## 👥 Współtwórcy
 
 - Sandra Gniewkowska
 - Krzysztof Janieszewski
 - Michał Itrych
-
-## 🙏 Podziękowania
-
-- [Shadcn UI](https://ui.shadcn.com/) za piękne komponenty interfejsu użytkownika
-- [Clerk](https://clerk.dev/) za usługi uwierzytelniania
-- [Pusher](https://pusher.com/) za możliwości działania w czasie rzeczywistym
-- [UploadThing](https://uploadthing.com/) za przesyłanie plików
-- [Tailwind CSS](https://tailwindcss.com/) za stylizację
