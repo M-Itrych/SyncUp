@@ -135,3 +135,5 @@ SyncUp jest zbudowany z wykorzystaniem nowoczesnego stosu technologicznego:
 - Sandra Gniewkowska
 - Krzysztof Janieszewski
 - Michał Itrych
+
+**https://syncup.bieda.it/invite/b2f90971-118d-4766-9bef-0f4c880d218e**
